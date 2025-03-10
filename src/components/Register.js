@@ -68,7 +68,7 @@ export default function SignUp({userInfo}) {
             <br />
             <p className="mt-3 ">
               <small className="text-white text-wrap text-center">
-                “RRS Expenses Manager - Just Perfect!”.
+                “Expenses Manager - Just Perfect!”.
               </small>
             </p>
           </div>
@@ -82,7 +82,7 @@ export default function SignUp({userInfo}) {
                   className="avatar-logo img-fluid rounded"
                   alt=""
                 ></img>
-                <h3>RRS Expense Manager</h3>
+                <h3>Expense Manager</h3>
                 <p>Track your expenses & income </p>
                 {/* <p>We are happy to have you back.</p> */}
               </div>

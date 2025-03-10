@@ -7,14 +7,17 @@ import { OverlayPanel } from 'primereact/overlaypanel';
 
 export default function Navbar({ logoutUser, userInfo}) {
 
+   
   const navigate = useNavigate();
   const [isNavBarOpen, setOpenNavBar] = useState(false);
+  
   const op = useRef(null);
 
   useEffect(() => {
     if(!userInfo) {      
       navigate("/");
     }
+    
   }, [userInfo]);
 
   const toggleNavBarClass = (e) => {
@@ -30,6 +33,8 @@ export default function Navbar({ logoutUser, userInfo}) {
   if (localStorage.getItem("light") === "set") {
     document.documentElement.setAttribute("data-bs-theme", "dark");
   }
+  console.log(userInfo)
+  console.log(userInfo.gender)
 
   return (
   <div className="wrapper">
@@ -64,15 +69,22 @@ export default function Navbar({ logoutUser, userInfo}) {
               <div className="navbar-collapse navbar">
                   <ul className="navbar-nav ml-auto">
                     <i className="pi pi-bell p-overlay-badge" style={{ fontSize: '1.5rem', margin:"8px 20px" }}  onClick={(e) => op.current.toggle(e)} >
-                    <Badge value="2"></Badge>
+                    <Badge value="20"></Badge>
                     </i>
                     <OverlayPanel ref={op}>
-                        <p>No notifications.</p>
+                        <p>You Have notifications</p>
                     </OverlayPanel>
                       <li className="nav-item dropdown">
-                          <a href="#" data-bs-toggle="dropdown" className="nav-icon pe-md-0">
-                              <img src={require("../images/profile.jpg")} className="avatar img-fluid rounded" alt=""></img>
-                          </a>
+                        <a href="#" data-bs-toggle="dropdown" className="nav-icon pe-md-0">
+                          
+                              {
+                               
+                                userInfo.gender==="male"? <img src={require("../images/profile.jpg")} className="avatar img-fluid rounded" alt=""></img>
+                                :<img src={require("../images/profile_girl.jpg")} className="avatar img-fluid rounded" alt=""></img>
+                               
+                              }
+                              </a>
+                         
                           <div className="dropdown-menu dropdown-menu-end">
                               <NavLink href="#" className="dropdown-item" to="/rrsexpense/profile"> <i className="fa-solid fa-drivers-license pe-2"></i> User Profile</NavLink>
                               <NavLink href="#" className="dropdown-item" to="/rrsexpense/settings"><i className="fa-solid fa-gear pe-2"></i> App Settings</NavLink>

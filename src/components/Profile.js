@@ -9,6 +9,7 @@ export default function Profile({userInfo}) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+   
     const data = new FormData(event.currentTarget);
 
     let payload = {
@@ -41,6 +42,8 @@ export default function Profile({userInfo}) {
       .catch((error) => {
         toast.error(`${error.message}, failed to register.`);
       });
+
+     
   };
 
   const clearForm =() =>{

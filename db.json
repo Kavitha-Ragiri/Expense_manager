@@ -3,15 +3,14 @@
     {
       "id": "1",
       "userName": "admin",
-      "fullName": "Ragiri Raja Sekhar",
+      "fullName": "SEKHAR ",
       "password": "rrs63",
-      "role": "admin",
       "email": "ragirirajasekhar@gmail.com",
-      "gender": "male",
-      "phoneNumber": "7382016541",
-      "location": "NRP. Pulivendula",
-      "salary": "150000",
-      "updatedOn": "02/19/2024 08:28:30"
+      "gender": "female",
+      "phoneNumber": "07787878788",
+      "location": "bangalore",
+      "salary": "50000",
+      "updatedOn": "03/10/2025 01:30:53"
     },
     {
       "id": "2",
@@ -168,27 +167,33 @@
       "location": "bangalore",
       "salary": "50000",
       "updatedOn": "03/02/2025 10:07:07"
+    },
+    {
+      "id": "4fd3",
+      "userName": "sekhar",
+      "fullName": "SEKHAR ",
+      "password": "12345",
+      "email": "ragirirajasekhar@gmail.com",
+      "gender": "male",
+      "phoneNumber": "07787878788",
+      "location": "bangalore",
+      "salary": "50000",
+      "updatedOn": "03/08/2025 12:45:08"
+    },
+    {
+      "id": "2299",
+      "userName": "kavitha",
+      "fullName": "SEKHAR ",
+      "password": "123",
+      "email": "ragirirajasekhar@gmail.com",
+      "gender": "male",
+      "phoneNumber": "07787878788",
+      "location": "bangalore",
+      "salary": "50000",
+      "updatedOn": "03/10/2025 01:33:05"
     }
   ],
   "categories": [
-    {
-      "id": "1",
-      "name": "Fruits (All Types Fruits)",
-      "code": "fruits",
-      "updatedOn": "03/06/2025 01:57:05"
-    },
-    {
-      "id": "2",
-      "code": "vegetables",
-      "name": "Vegetables",
-      "updatedOn": "02/19/2024 08:28:30"
-    },
-    {
-      "id": "3",
-      "code": "meats",
-      "name": "Meats",
-      "updatedOn": "02/19/2024 08:28:30"
-    },
     {
       "id": "4",
       "code": "dairy",

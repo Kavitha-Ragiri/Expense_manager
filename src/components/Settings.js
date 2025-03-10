@@ -1,7 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Divider } from 'primereact/divider';
+import { Badge } from 'primereact/badge';
+
 
 export default function Settings() {
+
+  const [notifications, setNotifications] = useState("")
   const [isChecked, setIsChecked] = useState(
     localStorage.getItem("light") === "set" ? true : false
   );
@@ -79,6 +83,7 @@ export default function Settings() {
               type="checkbox"
               style={{ cursor: "pointer" }}
             ></input>
+            
           </div>
         </div>
       </div>

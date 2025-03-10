@@ -65,7 +65,7 @@ export default function Login({setUser, userInfo}) {
             <br />
             <p className="mt-3 ">
               <small className="text-white text-wrap text-center">
-                “RRS Expenses Manager - Just Perfect!”.
+                “Expenses Manager - Just Perfect!”.
               </small>
             </p>
           </div>
@@ -74,7 +74,7 @@ export default function Login({setUser, userInfo}) {
             <div className="row align-items-center">
               <div className="header-text mb-2 text-center">
                 <img src={require("../images/logo.png")} style={{width:60, height:60}} className="avatar-logo img-fluid rounded" alt=""></img>
-                <h3>RRS Expense Manager</h3>
+                <h3>Expense Manager</h3>
                 <p>Track your expenses & income </p>
                 {/* <p>We are happy to have you back.</p> */}
               </div>

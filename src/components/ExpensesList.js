@@ -74,6 +74,7 @@ export default function ExpensesList() {
 
         setFilters(_filters);
         setGlobalFilterValue(value);
+      
     }
 
     const renderHeader = () => {
@@ -105,11 +106,12 @@ export default function ExpensesList() {
         });
     }
     
-    const amountBodyTemplate = (rowData) => {        
+    const amountBodyTemplate = (rowData) => {       
         return formatCurrency(+rowData?.amount);
     }
 
-    const groceriesBodyTemplate = (rowData) => {   
+    const groceriesBodyTemplate = (rowData) => { 
+        
         let groceriesData = getGroceryDetailsByCode(rowData.groceries);     
         return <> <div className="white-space-nowrap overflow-hidden text-overflow-ellipsis" title={groceriesData}>
           {groceriesData}
@@ -156,6 +158,7 @@ export default function ExpensesList() {
     }
     
     const actionBodyTemplate = (rowData) => {
+      console.log("hii")
         return <>
         <button type="button" className="btn btn-secondary btn-sm gridActionIcon" onClick={(e) => openExpenseEditModal(e, rowData)} > <i className="pi pi-file-edit" ></i></button>
         <button type="button" className="btn btn-danger btn-sm gridActionIcon" onClick={(e) => deleteExpense(e, rowData)}> <i className="pi pi-trash"></i></button>
