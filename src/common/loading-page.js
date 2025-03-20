@@ -35,7 +35,7 @@ export default function Pageloading({setUser, userInfo}) {
     <div style={{"marginTop":"20%", padding:"0% 35%"}}>
 
     <div className="header1">
-        <p><b>RRS Expense Manager</b></p>
+        <p><b>Expense Tracker</b></p>
       </div>
      <ProgressBar value={value}></ProgressBar>
 

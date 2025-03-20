@@ -42,7 +42,7 @@ export default function Navbar({ logoutUser, userInfo}) {
           <div className="h-100">
               <div className="sidebar-logo">
                   <a href="#">
-                  <img src={require("../images/logo.png")} className="avatar-logo img-fluid rounded" alt=""></img>&nbsp;RRS Creations</a>
+                  <img src={require("../images/logo.png")} className="avatar-logo img-fluid rounded" alt=""></img>&nbsp;RK Creations</a>
               </div>
               <ul className="sidebar-nav">
                   <li className="sidebar-header">
@@ -107,7 +107,7 @@ export default function Navbar({ logoutUser, userInfo}) {
                       <div className="col-4 text-start">
                           <p className="mb-0">
                               <a  className="text-muted footer-text">
-                                  RRS Creations
+                                  RK Creations
                               </a>
                           </p>
                       </div>

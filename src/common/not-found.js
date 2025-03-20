@@ -13,7 +13,7 @@ export default function PageNotFound({userInfo}) {
                 className="avatar-logo img-fluid rounded"
                 alt=""
               ></img>
-              <h5>RRS Expense Manager</h5>
+              <h5>Expense Tracker</h5>
               <p><small>Track your expenses & income </small></p>
               {/* <p>We are happy to have you back.</p> */}
             </div>
